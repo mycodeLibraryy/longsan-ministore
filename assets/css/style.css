@@ -1,0 +1,23 @@
+#company-services {
+  padding: 90px 0px;
+}
+.btn-right {
+  font-size: 20px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.product-store .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+@media (max-width: 968px) {
+  .icon {
+    display: none;
+  }
+}
