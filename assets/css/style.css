@@ -21,3 +21,11 @@
     display: none;
   }
 }
+.product-store .swiper-pagination .swiper-pagination-bullet{
+  background-color: black;
+  width: 15px;
+  height: 15px;
+}
+.product-store .swiper-pagination .swiper-pagination-bullet-active{
+  background-color: black;
+}
