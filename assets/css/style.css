@@ -3,15 +3,24 @@ body {
   margin: 0;
   padding: 0;
 }
-/*-----------------Icon Navbar-----------------*/
+/*-----------------Navbar-----------------*/
 @media (max-width: 968px) {
   .icon {
     display: none;
   }
 }
+.navbar a:hover{
+  color: #72aec8;
+}
+.billboard .container .banner-content{
+  margin-top: 50px;
+}
 /*-----------------Company Services-----------------*/
 .company-services {
   padding: 90px 0px;
+}
+.company-services i{
+  color: #72aec8;
 }
 .btn-right {
   font-size: 20px;
@@ -34,7 +43,7 @@ body {
   color: #72aec8;
 }
 .product-store .swiper-pagination {
-  margin-top: 60px;
+  margin-top: 40px;
   position: relative;
 }
 .product-store .swiper-pagination .swiper-pagination-bullet {
@@ -45,15 +54,15 @@ body {
 .product-store .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #343a40;
 }
-.product-slider a button{
-  width: 200px;
+.product-slider a button {
+  width: 80%;
   height: 50px;
 }
-.product-slider a{
+.product-slider a {
   width: 100%;
   height: 100%;
   bottom: 0px;
-  top: 30%;
+  top: 35%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -65,11 +74,11 @@ body {
   transition: 0.8s;
   opacity: 0;
 }
-.product-slider a:hover{
+.product-slider a:hover {
   color: #72aec8;
   opacity: 1;
 }
-.product-slider button:hover{
+.product-slider button:hover {
   background-color: #72aec8;
 }
 
@@ -107,7 +116,7 @@ body {
   background-color: #232529;
   padding: 56px 12px;
 }
-.subscribe{
+.subscribe {
   padding: 98px 0px;
 }
 .subscribe input {
@@ -160,4 +169,33 @@ footer a:hover {
 }
 footer a i:hover {
   color: #72aec8;
+}
+/* Breadcrumb */
+#breadcrumb {
+  padding: 56px 0px;
+}
+.breadcrumb .bd-content {
+  padding: 98px 12px 0px;
+}
+.breadcrumb .bd-content h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
+.breadcrumb .breadcrumb-item a{
+  color: #212529;
+}
+.breadcrumb .breadcrumb-item a:hover{
+  color: #72aec8;
+}
+.about-us .about-us-detail p {
+  color: #aeaeae;
+}
+.about-us {
+  padding: 0px 0px 98px;
+}
+.about-us .about-us-detail {
+  padding: 0px 0px 0px 48px;
+}
+.about-us .about-us-detail a{
+  font-size: 18px;
 }
