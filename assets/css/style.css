@@ -9,17 +9,17 @@ body {
     display: none;
   }
 }
-.navbar a:hover{
+.navbar a:hover {
   color: #72aec8;
 }
-.billboard .container .banner-content{
+.billboard .container .banner-content {
   margin-top: 50px;
 }
 /*-----------------Company Services-----------------*/
 .company-services {
   padding: 90px 0px;
 }
-.company-services i{
+.company-services i {
   color: #72aec8;
 }
 .btn-right {
@@ -181,10 +181,10 @@ footer a i:hover {
   font-size: 70px;
   font-weight: 200;
 }
-.breadcrumb .breadcrumb-item a{
+.breadcrumb .breadcrumb-item a {
   color: #212529;
 }
-.breadcrumb .breadcrumb-item a:hover{
+.breadcrumb .breadcrumb-item a:hover {
   color: #72aec8;
 }
 .about-us .about-us-detail p {
@@ -196,6 +196,66 @@ footer a i:hover {
 .about-us .about-us-detail {
   padding: 0px 0px 0px 48px;
 }
-.about-us .about-us-detail a{
+.about-us .about-us-detail a {
   font-size: 18px;
+}
+
+/* Blog Post */
+.blog-post {
+  padding: 98px 0px;
+}
+.blog-post form .search-field{
+  height: 40px;
+  width: 100%;
+}
+.blog-post .search-icon {
+  background-color: black;
+  font-size: 25px;
+  width: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.blog-post .search-icon i{
+  font-size: 20px;
+  color: black;
+}
+.blog-post .search-icon i:hover{
+  color: #72aec8;
+}
+.blog-post .post-item a {
+  font-size: 20px;
+  color: #232529;
+}
+.blog-post .post-item a:hover{
+  color: #72aec8;
+}
+.blog-post .list-group{
+  font-size: 18px;
+  list-style: none;
+}
+.blog-post .list-group li a{
+  color: #212529;
+}
+.blog-post .list-group li a:hover{
+  color: #72aec8;
+}
+.blog-post .recent-post a p{
+  font-weight: 400;
+  color: #212529;
+  padding-right: 20px;
+}
+.blog-post .recent-post a p:hover{
+  color: #72aec8;
+}
+.navigation{
+  padding: 56px 0px;
+}
+.navigation .page-numbers{
+  font-size: 20px;
+  color: #aeaeae;
+}
+.navigation .page-numbers:hover{
+  color: #72aec8;
 }
