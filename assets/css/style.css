@@ -259,3 +259,68 @@ footer a i:hover {
 .navigation .page-numbers:hover{
   color: #72aec8;
 }
+
+/* Shop Item */
+.shop-item{
+  padding: 98px 0px;
+}
+.shop-item form .search-field{
+  height: 40px;
+  width: 100%;
+}
+.shop-item .search-icon {
+  background-color: black;
+  font-size: 25px;
+  width: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.shop-item .search-icon i{
+  font-size: 20px;
+  color: black;
+}
+.shop-item .search-icon i:hover{
+  color: #72aec8;
+}
+.shop-item .item .row .price {
+  color: #72aec8;
+}
+.shop-item .item a button {
+  width: 80%;
+  height: 50px;
+}
+.shop-item .item a {
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  top: 35%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  transition: 0.8s;
+  opacity: 0;
+}
+.shop-item .item a:hover {
+  color: #72aec8;
+  opacity: 1;
+}
+.shop-item .item button:hover {
+  background-color: #72aec8;
+}
+.shop-item .list-group{
+  font-size: 18px;
+  list-style: none;
+}
+.shop-item .list-group li a{
+  color: #212529;
+}
+.shop-item .list-group li a:hover{
+  color: #72aec8;
+}
