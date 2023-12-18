@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/*-----------------Navbar-----------------*/
+/*----------------- Navbar -----------------*/
 @media (max-width: 968px) {
   .icon {
     display: none;
@@ -15,7 +15,7 @@ body {
 .billboard .container .banner-content {
   margin-top: 50px;
 }
-/*-----------------Company Services-----------------*/
+/*----------------- Company Services -----------------*/
 .company-services {
   padding: 90px 0px;
 }
@@ -33,7 +33,7 @@ body {
   display: flex;
   align-items: center;
 }
-/*-----------------Swiper js-----------------*/
+/*----------------- Swiper js -----------------*/
 .product-store .swiper-slide .layout {
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
   background-color: #72aec8;
 }
 
-/*-----------------Latest Post-----------------*/
+/*----------------- Latest Post -----------------*/
 .latest-post {
   padding: 98px 0px;
 }
@@ -90,7 +90,7 @@ body {
   font-size: 23px;
   color: #232529;
 }
-/*-----------------Testimonials-----------------*/
+/*----------------- Testimonials -----------------*/
 .testimonials .quote {
   font-size: 128px;
   color: #72aec8;
@@ -111,7 +111,7 @@ body {
   font-size: 15px;
   font-weight: bold;
 }
-/*-----------------Subcribe-----------------*/
+/*----------------- Subcribe -----------------*/
 .subscribe .container {
   background-color: #232529;
   padding: 56px 12px;
@@ -130,7 +130,7 @@ body {
 .subscribe button:hover {
   font-size: 15px;
 }
-/*-----------------Instagram-----------------*/
+/*----------------- Instagram -----------------*/
 .instagram {
   padding: 0px 0px 98px;
 }
@@ -156,7 +156,7 @@ body {
   opacity: 0.8;
 }
 
-/*-----------------Footer-----------------*/
+/*----------------- Footer -----------------*/
 footer a i {
   font-size: 20px;
   color: #d7dddf;
@@ -170,7 +170,7 @@ footer a:hover {
 footer a i:hover {
   color: #72aec8;
 }
-/* Breadcrumb */
+/*----------------- Breadcrumb -----------------*/
 #breadcrumb {
   padding: 56px 0px;
 }
@@ -200,7 +200,7 @@ footer a i:hover {
   font-size: 18px;
 }
 
-/* Blog Post */
+/*----------------- Blog Post -----------------*/
 .blog-post {
   padding: 98px 0px;
 }
@@ -260,7 +260,7 @@ footer a i:hover {
   color: #72aec8;
 }
 
-/* Shop Item */
+/*----------------- Shop Item -----------------*/
 .shop-item{
   padding: 98px 0px;
 }
@@ -324,3 +324,8 @@ footer a i:hover {
 .shop-item .list-group li a:hover{
   color: #72aec8;
 }
+/*----------------- Cart -----------------*/
+.cart{
+  padding: 78px 0px;
+}
+
