@@ -204,7 +204,7 @@ footer a i:hover {
 .blog-post {
   padding: 98px 0px;
 }
-.blog-post form .search-field{
+.blog-post form .search-field {
   height: 40px;
   width: 100%;
 }
@@ -217,54 +217,54 @@ footer a i:hover {
   justify-content: center;
   text-align: center;
 }
-.blog-post .search-icon i{
+.blog-post .search-icon i {
   font-size: 20px;
   color: black;
 }
-.blog-post .search-icon i:hover{
+.blog-post .search-icon i:hover {
   color: #72aec8;
 }
 .blog-post .post-item a {
   font-size: 20px;
   color: #232529;
 }
-.blog-post .post-item a:hover{
+.blog-post .post-item a:hover {
   color: #72aec8;
 }
-.blog-post .list-group{
+.blog-post .list-group {
   font-size: 18px;
   list-style: none;
 }
-.blog-post .list-group li a{
+.blog-post .list-group li a {
   color: #212529;
 }
-.blog-post .list-group li a:hover{
+.blog-post .list-group li a:hover {
   color: #72aec8;
 }
-.blog-post .recent-post a p{
+.blog-post .recent-post a p {
   font-weight: 400;
   color: #212529;
   padding-right: 20px;
 }
-.blog-post .recent-post a p:hover{
+.blog-post .recent-post a p:hover {
   color: #72aec8;
 }
-.navigation{
+.navigation {
   padding: 56px 0px;
 }
-.navigation .page-numbers{
+.navigation .page-numbers {
   font-size: 20px;
   color: #aeaeae;
 }
-.navigation .page-numbers:hover{
+.navigation .page-numbers:hover {
   color: #72aec8;
 }
 
 /*----------------- Shop Item -----------------*/
-.shop-item{
+.shop-item {
   padding: 98px 0px;
 }
-.shop-item form .search-field{
+.shop-item form .search-field {
   height: 40px;
   width: 100%;
 }
@@ -277,11 +277,11 @@ footer a i:hover {
   justify-content: center;
   text-align: center;
 }
-.shop-item .search-icon i{
+.shop-item .search-icon i {
   font-size: 20px;
   color: black;
 }
-.shop-item .search-icon i:hover{
+.shop-item .search-icon i:hover {
   color: #72aec8;
 }
 .shop-item .item .row .price {
@@ -314,18 +314,31 @@ footer a i:hover {
 .shop-item .item button:hover {
   background-color: #72aec8;
 }
-.shop-item .list-group{
+.shop-item .list-group {
   font-size: 18px;
   list-style: none;
 }
-.shop-item .list-group li a{
+.shop-item .list-group li a {
   color: #212529;
 }
-.shop-item .list-group li a:hover{
+.shop-item .list-group li a:hover {
   color: #72aec8;
 }
 /*----------------- Cart -----------------*/
-.cart{
+.cart {
   padding: 78px 0px;
 }
-
+.cart .cart-price {
+  font-size: 20px;
+  color: #72aec8;
+}
+.cart .subtotal-price {
+  font-size: 30px;
+  color: #72aec8;
+}
+.cart .btn-cart-total a {
+  background-color: black;
+}
+.cart .btn-cart-total a:hover {
+  background-color: #72aec8;
+}
