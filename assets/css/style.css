@@ -12,6 +12,9 @@ body {
 .navbar a:hover {
   color: #72aec8;
 }
+.billboard{
+  background-color: #EEF1F3;
+}
 .billboard .container .banner-content {
   margin-top: 50px;
 }
@@ -113,7 +116,7 @@ body {
 }
 /*----------------- Subcribe -----------------*/
 .subscribe .container {
-  background-color: #232529;
+  background-color: black;
   padding: 56px 12px;
 }
 .subscribe {
@@ -173,6 +176,7 @@ footer a i:hover {
 /*----------------- Breadcrumb -----------------*/
 #breadcrumb {
   padding: 56px 0px;
+  background-color: #EEF1F3;
 }
 .breadcrumb .bd-content {
   padding: 98px 12px 0px;
@@ -340,5 +344,16 @@ footer a i:hover {
   background-color: black;
 }
 .cart .btn-cart-total a:hover {
+  background-color: #72aec8;
+}
+/*----------------- Billing Detail -----------------*/
+.billing-detail{
+  padding: 78px 0px;
+}
+
+.billing-detail .place-on-order a{
+  background-color: black;
+}
+.billing-detail .place-on-order a:hover{
   background-color: #72aec8;
 }

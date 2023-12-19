@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
@@ -104,14 +102,14 @@
         <div class="container bd-content">
             <div class="row ">
                 <div class="display-header text-uppercase text-dark d-flex justify-content-center align-items-center">
-                    <h1>About Us</h1>
+                    <h1>Checkout</h1>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="breadcrumb-item text-dark">
                         <span class="item">
                             <a href="../../index.html">Home ></a>
                         </span>
-                        <span class="item">About Us</span>
+                        <span class="item">Checkout</span>
                     </div>
                 </div>
             </div>
@@ -119,161 +117,141 @@
     </section>
     <!-- BreadCrumb -->
 
-    <!-- Company Services -->
-    <section id="company-services" class="company-services padding-large">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-3 col-md-6 ">
-                    <div class="icon-box d-flex">
-                        <div class="icon-box-icon pe-3">
-                            <i class="fa fa-shopping-cart fa-lg"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h3 class="card-title text-uppercase text-dark">Free delivery</h3>
-                            <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 pb-3">
-                    <div class="icon-box d-flex">
-                        <div class="icon-box-icon pe-3">
-                            <i class="fa fa-star fa-lg"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h4 class="card-title text-uppercase text-dark">Quality guarantee</h4>
-                            <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 ">
-                    <div class="icon-box d-flex">
-                        <div class="icon-box-icon pe-3">
-                            <i class="fa-solid fa-tag fa-lg"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h4 class="card-title text-uppercase text-dark">Daily offers</h4>
-                            <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="icon-box d-flex">
-                        <div class="icon-box-icon pe-3">
-                            <i class="fa-solid fa-shield fa-lg"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h4 class="card-title text-uppercase text-dark">100% secure payment</h4>
-                            <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Company Services -->
-
-    <!--Start About Us -->
-    <section class="about-us">
+    <!-- Billing Detail -->
+    <section class="billing-detail">
         <div class="container">
             <div class="row">
+                <div class="col-md-6 ">
+                    <h3 class="text-uppercase pb-3">Billing Details</h3>
+                    <div class="mb-3 ">
+                        <label for="exampleFormControlInput1" class="form-label">First Name*</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="exampleFormControlInput1" class="form-label">Last Name*</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="exampleFormControlInput1" class="form-label">Company Name(optional)*</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleFormControlInput1" class="form-label">Country/Region*</label>
+                        <select class="form-select pb-2" aria-label="Default select example ">
+                            <option>United States</option>
+                            <option>UK</option>
+                            <option>Australia</option>
+                            <option>Canada</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label pt-3">Street Address*</label>
+                        <input type="text" class="form-control pb-2" id="exampleFormControlInput1"
+                            placeholder="House number and street name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Apartments, suite, etc.">
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleFormControlInput1" class="form-label pt-3">Town/City*</label>
+                        <input type="text" class="form-control pb-2" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleFormControlInput1" class="form-label">State*</label>
+                        <select class="form-select pb-2" aria-label="Default select example ">
+                            <option>Florida</option>
+                            <option>NewYork</option>
+                            <option>Chicago</option>
+                            <option>Texas</option>
+                            <option>San Joe</option>
+                            <option>Huston</option>
+                        </select>
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleFormControlInput1" class="form-label pt-3">Zip Code*</label>
+                        <input type="text" class="form-control pb-2" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleFormControlInput1" class="form-label pt-3">Phone*</label>
+                        <input type="text" class="form-control pb-2" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleFormControlInput1" class="form-label pt-3">Email address*</label>
+                        <input type="email" class="form-control pb-2" id="exampleFormControlInput1">
+                    </div>
+                </div>
                 <div class="col-md-6">
-                    <img src="../images/about/single-image3.jpg" alt="">
-                </div>
-                <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <div class="container about-us-detail">
+                    <h3 class="text-uppercase pb-3">Additional Information</h3>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Order notes(optional)</label>
+                        <textarea class="form-control pt-3" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Notes about your oder. Like special notes for delivery."></textarea>
+                    </div>
+                    <div class="container">
+                        <h2 class="text-uppercase pt-3 pb-3">Cart Total</h2>
                         <div class="row">
-                            <div class="col-md-12 mt-3 text-uppercase">
-                                <h1>How was ministore found?</h1>
-                            </div>
-                            <div class="col-md-12">
-                                <p>
-                                    Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era.
-                                    Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate
-                                    amet duis erat volutpat vitae eget. Sed vitae metus nibh sit era. Nulla adipiscing
-                                    pharetra pellentesque maecenas odio eros at. Quam libero etiam et in ac at quis.
-                                </p>
-                                <p>
-                                    Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio
-                                    eros at. Et libero vulputate amet duis erat volutpat vitae eget. Quam libero etiam
-                                    et in ac at quis. Risus augue curabitur diam senectus congue velit et.
-                                </p>
-                                <div class="pt-2">
-                                    <a href="" class="btn btn-lg text-uppercase text-light btn-rounded-none bg-dark">
-                                        Shop Our Store
-                                    </a>
+                            <div class="col-md-5 d-flex justify-content-between">
+                                <p class="text-uppercase" style="color: black; font-weight: 500;">SubTotal</p>
+                                <div>
+                                    <p style="color: #72aec8;">$20000.00</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-5 d-flex justify-content-between">
+                                <p class="text-uppercase" style="color: black; font-weight: 500;">Total</p>
+                                <div>
+                                    <p style="color: #72aec8;">$40000.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check pt-5">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <h5 class="text-uppercase">Direct Bank Transfer</h5>
+                            <p>Make your payment directly into our bank account. Please use your Order ID. Your order
+                                will shipped after funds have cleared in our account.</p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <h5 class="text-uppercase">Check Payment</h5>
+                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store
+                                Postcode.</p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            <h5 class="text-uppercase">Cash On Delivery</h5>
+                            <p>Pay with cash upon delivery.</p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            <h5 class="text-uppercase">Paypal</h5>
+                            <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                        </label>
+                    </div>
+                    <div class="col-md-4 place-on-order">
+                        <a href="" class="btn btn-lg text-light btn-rounded-none w-100">
+                            Shop Product
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--End About Us -->
-
-    <!--Start Testimonials -->
-    <section id="testimonials" class="testimonials position-relative">
-        <div class="container">
-            <div class="quote d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-quote-right"></i>
-            </div>
-            <div class="container">
-                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="quote-text d-flex justify-content-center align-items-center">
-                                <div class="card text-center" style="width: 80%;">
-                                    <div class="card-body">
-                                        <p class="card-text text-center">
-                                            “Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis
-                                            lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise
-                                            sagittis lorem habi tasse morbi.”
-                                        </p>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p class="author-name text-uppercase">Emma Chamberlin</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="quote-text d-flex justify-content-center align-items-center">
-                                <div class="card text-center" style="width: 80%;">
-                                    <div class="card-body">
-                                        <p class="card-text text-center">
-                                            “A blog is a digital publication that can complement a website or exist
-                                            independently. A blog may include articles, short posts, listicles,
-                                            infographics, videos, and other digital content.”
-                                        </p>
-                                        <div class="rating">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        <p class="author-name text-uppercase">Jennie Rose</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next text-secondary"></div>
-                    <div class="swiper-button-prev text-secondary"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Testimonials -->
+    <!-- Billing Detail -->
 
     <!--Start Subscribe -->
     <section id="subscribe" class="subscribe position-relative">
-        <div class="container pt-5 pb-5">
+        <div class="container pb-5">
             <div class="row">
                 <div class="col-md-6 mx-3">
                     <h2 class="text-light text-uppercase mx-5">Subscribe Us Now</h2>
@@ -450,31 +428,13 @@
     </footer>
     <!--End Footer -->
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
-    <script>
-        let swiperCards2 = new Swiper(".testimonials-slider", {
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-
-            },
-            breakpoints: {
-                968: {
-                    slidesPerView: 1,
-
-                },
-            },
-        });
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
