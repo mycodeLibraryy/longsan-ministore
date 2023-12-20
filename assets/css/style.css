@@ -12,8 +12,8 @@ body {
 .navbar a:hover {
   color: #72aec8;
 }
-.billboard{
-  background-color: #EEF1F3;
+.billboard {
+  background-color: #eef1f3;
 }
 .billboard .container .banner-content {
   margin-top: 50px;
@@ -25,8 +25,7 @@ body {
 .company-services i {
   color: #72aec8;
 }
-.btn-right {
-  font-size: 20px;
+.btn-right a {
   background-color: Transparent;
   background-repeat: no-repeat;
   text-decoration: underline;
@@ -35,6 +34,7 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  margin-right: 60px;
 }
 /*----------------- Swiper js -----------------*/
 .product-store .swiper-slide .layout {
@@ -127,11 +127,11 @@ body {
   border-radius: 0;
 }
 .subscribe button {
-  font-size: 15px;
+  font-size: 14px;
   background-color: #72aec8;
 }
 .subscribe button:hover {
-  font-size: 15px;
+  font-size: 14px;
 }
 /*----------------- Instagram -----------------*/
 .instagram {
@@ -176,7 +176,7 @@ footer a i:hover {
 /*----------------- Breadcrumb -----------------*/
 #breadcrumb {
   padding: 56px 0px;
-  background-color: #EEF1F3;
+  background-color: #eef1f3;
 }
 .breadcrumb .bd-content {
   padding: 98px 12px 0px;
@@ -252,6 +252,10 @@ footer a i:hover {
 }
 .blog-post .recent-post a p:hover {
   color: #72aec8;
+}
+.blog-post .recent-post .card-content a{
+ text-transform: uppercase;
+ font-size: 16px;
 }
 .navigation {
   padding: 56px 0px;
@@ -347,13 +351,56 @@ footer a i:hover {
   background-color: #72aec8;
 }
 /*----------------- Billing Detail -----------------*/
-.billing-detail{
+.billing-detail {
   padding: 78px 0px;
 }
 
-.billing-detail .place-on-order a{
+.billing-detail .place-on-order a {
   background-color: black;
 }
-.billing-detail .place-on-order a:hover{
+.billing-detail .place-on-order a:hover {
   background-color: #72aec8;
+}
+/* Single Post */
+.single-post {
+  padding: 98px 0px;
+}
+.single-post p {
+  font-size: 18px;
+  color: #aeaeae;
+}
+.post-bottom-link i {
+  font-size: 20px;
+  color: #d7dddf;
+}
+.post-bottom-link a {
+  color: #232529;
+}
+.post-bottom-link a:hover {
+  color: #72aec8;
+}
+.post-bottom-link a i:hover {
+  color: #72aec8;
+}
+.pagination-comment a {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+}
+.pagination-comment a:hover {
+  color: #72aec8;
+}
+.single-post .comment .comments-reply a {
+  color: #72aec8;
+  text-decoration: underline;
+}
+.single-post .comment .comments-reply a:hover {
+  color: #72aec8;
+  text-decoration: none;
+}
+.single-post .comment .label-body {
+  font-size: 14px;
+}
+.single-post .comment .btn-comment .btn{
+  background-color: black;
 }
