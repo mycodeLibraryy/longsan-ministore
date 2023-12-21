@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section id="header">
+        <nav class="navbar navbar-expand-lg bg-light text-dark p-3 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../images/main-logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse text-uppercase" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link me-4" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="#company-services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="#mobiles-products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="#watches-products">Watches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="#sale">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="#latest-post">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link me-4 dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="about.html" class="dropdown-item">About</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html" class="dropdown-item">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="shop.html" class="dropdown-item">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html" class="dropdown-item">Cart</a>
+                                </li>
+                                <li>
+                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                </li>
+                                <li>
+                                    <a href="single-post.html" class="dropdown-item">Single Post</a>
+                                </li>
+                                <li>
+                                    <a href="single-product.html" class="dropdown-item">Single Product</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="dropdown-item">Contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item icon">
+                            <a class="nav-link mx-2" href="#"><i class="fa fa-search text-dark"></i></a>
+                        </li>
+                        <li class="nav-item icon">
+                            <a class="nav-link" href="#"><i class="fa fa-user text-dark"></i></a>
+                        </li>
+                        <li class="nav-item icon">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart text-dark"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar -->
+
+    <!-- BreadCrumb -->
+    <section id="breadcrumb" class="breadcrumb padding-large overflow-hidden no-padding-top">
+        <div class="container bd-content">
+            <div class="row ">
+                <div class="display-header text-uppercase text-dark d-flex justify-content-center align-items-center">
+                    <h1>Shop</h1>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="breadcrumb-item text-dark">
+                        <span class="item">
+                            <a href="../../index.html">Home ></a>
+                        </span>
+                        <span class="item">Shop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BreadCrumb -->
+
+    <!-- Shop Item -->
+    <section class="shop-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-between">
+                        <div class="showing-product">
+                            <p>Showing 1-9 of 55 results</p>
+                        </div>
+                        <div class="sort-by">
+                            <select id="input-sort" class="form-control" data-filter-sort="" data-filter-order="">
+                                <option value="">Default sorting</option>
+                                <option value="">Name (A - Z)</option>
+                                <option value="">Name (Z - A)</option>
+                                <option value="">Price (Low-High)</option>
+                                <option value="">Price (High-Low)</option>
+                                <option value="">Rating (Highest)</option>
+                                <option value="">Rating (Lowest)</option>
+                                <option value="">Model (A - Z)</option>
+                                <option value="">Model (Z - A)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/mobiles/product-item1.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/mobiles/product-item2.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/mobiles/product-item3.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/mobiles/product-item4.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/watches/product-item10.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/watches/product-item8.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/watches/product-item9.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/watches/product-item7.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pe-3 pt-3">
+                            <div class="item">
+                                <div class="position-relative">
+                                    <img src="../images/mobiles/product-item5.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-5">
+                        <nav class="navigation paging-navigation text-center padding-medium " role="navigation">
+                            <div class="pagination loop-pagination d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <div class="chevron-left pe-3">
+                                        <i class="fa-solid fa-chevron-left text-dark"></i>
+                                    </div>
+                                </a>
+                                <span aria-current="page" class="page-numbers current pe-3">1</span>
+                                <a class="page-numbers pe-3" href="#">2</a>
+                                <a class="page-numbers pe-3" href="#">3</a>
+                                <a class="page-numbers pe-3" href="#">4</a>
+                                <a class="page-numbers pe-3" href="#">5</a>
+                                <a href="#">
+                                    <div class="chevron-left  text-dark">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-12">
+                        <div class="widget-search-bar">
+                            <form role="search" method="get" class="d-flex text-center align-items-center">
+                                <input class="search-field px-3" placeholder="Search" type="search">
+                                <div class="search-icon">
+                                    <a href="#">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-5">
+                        <div class="catagory">
+                            <h4 class="text-uppercase text-decoration-underline pb-2">categories</h4>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="assets/pages/about.html">All</a>
+                                </li>
+                                <li>
+                                    <a href="assets/pages/blog.html">Phone</a>
+                                </li>
+                                <li>
+                                    <a href="shop.html">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">Tablets</a>
+                                </li>
+                                <li>
+                                    <a href="checkout.html">Watches</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-5">
+                        <div class="Tag">
+                            <h4 class="text-uppercase text-decoration-underline pb-2">Tag</h4>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">White</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cheap</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mobile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Modern</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-5">
+                        <div class="brand">
+                            <h4 class="text-uppercase text-decoration-underline pb-2">Brands</h4>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">Apple</a>
+                                </li>
+                                <li>
+                                    <a href="#">Samsung</a>
+                                </li>
+                                <li>
+                                    <a href="#">Huwai</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-5">
+                        <div class="filter-by-price">
+                            <h4 class="text-uppercase text-decoration-underline pb-2">Brands</h4>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">Less than $10</a>
+                                </li>
+                                <li>
+                                    <a href="#">$10- $20</a>
+                                </li>
+                                <li>
+                                    <a href="#">$20- $30</a>
+                                </li>
+                                <li>
+                                    <a href="#">$30- $40</a>
+                                </li>
+                                <li>
+                                    <a href="#">$40- $50</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Item -->
+
+    <!--Start Subscribe -->
+    <section id="subscribe" class="subscribe position-relative">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6 mx-3">
+                    <h2 class="text-light text-uppercase mx-5 fw-normal">Subscribe Us Now</h2>
+                    <div class="text-secondary mx-5">Get latest news, updates and deals directly mailed to your inbox.
+                    </div>
+                </div>
+                <div class="col-md-5 pt-3">
+                    <form class="d-flex justify-content-center align-items-center" role="search">
+                        <input class="form-control" type="email" placeholder="Your email address here"
+                            aria-label="Subscribe">
+                        <button class="btn text-light fw-normal" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Subscribe -->
+
+    <!--Start Instagram -->
+    <section id="instagram" class="instagram padding-large overflow-hidden no-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="display-header text-uppercase text-dark text-center pb-3">
+                    <h2>Shop Our Insta</h2>
+                </div>
+                <div class="d-flex flex-wrap d-flex justify-content-center align-items-center">
+                    <figure class="instagram-item pe-2 ">
+                        <a href="#" class="image-link position-relative">
+                            <img src="../images/insta/insta-item1.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="../images/insta/insta-item2.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="../images/insta/insta-item3.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="../images/insta/insta-item4.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="../images/insta/insta-item5.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Instagram -->
+
+    <!--Start Footer -->
+    <footer class="text-center text-lg-start bg-body-light text-muted">
+        <!-- Section: Links  -->
+        <section class="links">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="sight-map col-md-3 col-lg-4 col-xl-3 mx-auto mb-5">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-1">
+                            <img src="../images/main-logo.png" alt="">
+                        </h6>
+                        <p>
+                            Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat
+                            aenean odio erat nullam fringilla
+                        </p>
+                        <div class="social-media text-muted">
+                            <a href="" class="me-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-dark mb-3">
+                            Quick links
+                        </h5>
+                        <p class="text-uppercase  mb-2">
+                            <a href="#!">Home</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">About</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Shop</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Blog</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-dark mb-3">
+                            Help & Info Help
+                        </h5>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Track Your Order</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Returns Policies</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Shipping + Delivery</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Contact Us</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2">
+                            <a href="#!">Faqs</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="contact col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-dark mb-4">Contact</h5>
+                        <p>Do you have any queries or suggestions?
+                            <a href="">yourinfo@gmail.com</a>
+                        </p>
+                        <p>
+                            If you need support? Just give us a call.
+                            <a href="">+55 111 222 333 44</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--End Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+
+</body>
+
+</html>

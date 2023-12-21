@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- Navbar -->
     <section id="header">
-        <nav class="navbar navbar-expand-lg text-dark bg-light p-3 fixed-top">
+        <nav class="navbar navbar-expand-lg  bg-light fixed-top p-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/main-logo.png" alt="">
@@ -31,54 +32,53 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class=" collapse navbar-collapse text-uppercase" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item">
-                            <a class="nav-link mx-2 active" aria-current="page" href="#billboard">Home</a>
+                            <a class="nav-link pe-3 active" aria-current="page" href="#billboard">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="#company-services">Services</a>
+                            <a class="nav-link pe-3" href="#company-services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="#mobiles-products">Products</a>
+                            <a class="nav-link pe-3" href="#mobiles-products">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="#watches-products">Watches</a>
+                            <a class="nav-link pe-3" href="#watches-products">Watches</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="#">Sale</a>
+                            <a class="nav-link pe-3" href="#sale">Sale</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="#">Blog</a>
+                            <a class="nav-link pe-3" href="#latest-post">Blog</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link me-4 dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button"
                                 aria-expanded="false">Pages</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="about.html" class="dropdown-item">About</a>
+                                    <a href="assets/pages/about.html" class="dropdown-item">About</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" class="dropdown-item">Blog</a>
+                                    <a href="assets/pages/blog.html" class="dropdown-item">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="shop.html" class="dropdown-item">Shop</a>
+                                    <a href="assets/pages/shop.html" class="dropdown-item">Shop</a>
                                 </li>
                                 <li>
-                                    <a href="cart.html" class="dropdown-item">Cart</a>
+                                    <a href="assets/pages/cart.html" class="dropdown-item">Cart</a>
                                 </li>
                                 <li>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                    <a href="assets/pages/checkout.html" class="dropdown-item">Checkout</a>
                                 </li>
                                 <li>
-                                    <a href="single-post.html" class="dropdown-item">Single Post</a>
+                                    <a href="assets/pages/single-post.html" class="dropdown-item">Single Post</a>
                                 </li>
                                 <li>
-                                    <a href="single-product.html" class="dropdown-item">Single Product</a>
+                                    <a href="assets/pages/single-product.html" class="dropdown-item">Single Product</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html" class="dropdown-item">Contact</a>
+                                    <a href="assets/pages/contact.html" class="dropdown-item">Contact</a>
                                 </li>
                             </ul>
                         </li>
@@ -96,19 +96,17 @@
             </div>
         </nav>
     </section>
-
     <!-- Navbar -->
 
     <!-- Silde -->
-    <section id="billboard">
-        <div id="carouselExampleControls" class="carousel slide bg-secondary pt-5" data-mdb-ride="carousel"
-            data-mdb-carousel-init>
+    <section id="billboard" class="billboard">
+        <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="container pt-5">
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-md-6">
-                                <div class="banner-content">
+                    <div class="container">
+                        <div class="row d-flex flex-wrap align-items-center ">
+                            <div class="col-md-6 pt-5">
+                                <div class="banner-content pb-5">
                                     <h1 class="display-2 text-uppercase text-dark">
                                         Your Products Are Great.
                                     </h1>
@@ -117,19 +115,19 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5 d-flex justify-content-center align-items-center">
                                 <div class="image-holder">
-                                    <img src="./assets/images/banner-image.png" alt="" width="100%">
+                                    <img src="./assets/images/banner-image.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="container pt-5">
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-md-6">
-                                <div class="banner-content">
+                    <div class="container">
+                        <div class="row d-flex flex-wrap align-items-center ">
+                            <div class="col-md-6 pt-5">
+                                <div class="banner-content pb-5">
                                     <h1 class="display-2 text-uppercase text-dark">
                                         Techonology Hack You Won't Get
                                     </h1>
@@ -138,9 +136,9 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5 d-flex justify-content-center align-items-center">
                                 <div class="image-holder">
-                                    <img src="./assets/images/banner-image.png" alt="" width="100%">
+                                    <img src="./assets/images/banner-image.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -162,17 +160,17 @@
     <!-- Silde -->
 
     <!-- Company Services -->
-    <section id="company-services" class="padding-large">
+    <section id="company-services" class="company-services padding-large">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-3 col-md-6 ">
                     <div class="icon-box d-flex">
                         <div class="icon-box-icon pe-3">
                             <i class="fa fa-shopping-cart fa-lg"></i>
                         </div>
                         <div class="icon-box-content">
-                            <h3 class="card-title text-uppercase text-dark">Free delivery</h3>
-                            <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                            <h4 class="card-title text-uppercase text-dark fw-normal">Free delivery</h4>
+                            <p class="text-muted">Consectetur adipi elit lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
@@ -182,8 +180,8 @@
                             <i class="fa fa-star fa-lg"></i>
                         </div>
                         <div class="icon-box-content">
-                            <h4 class="card-title text-uppercase text-dark">Quality guarantee</h4>
-                            <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                            <h4 class="card-title text-uppercase text-dark fw-normal">Quality guarantee</h4>
+                            <p class="text-muted">Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
                         </div>
                     </div>
                 </div>
@@ -193,8 +191,8 @@
                             <i class="fa-solid fa-tag fa-lg"></i>
                         </div>
                         <div class="icon-box-content">
-                            <h4 class="card-title text-uppercase text-dark">Daily offers</h4>
-                            <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                            <h4 class="card-title text-uppercase text-dark fw-normal">Daily offers</h4>
+                            <p class="text-muted">Amet consectetur adipi elit loreme ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
@@ -204,8 +202,8 @@
                             <i class="fa-solid fa-shield fa-lg"></i>
                         </div>
                         <div class="icon-box-content">
-                            <h4 class="card-title text-uppercase text-dark">100% secure payment</h4>
-                            <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                            <h4 class="card-title text-uppercase text-dark fw-normal">100% secure payment</h4>
+                            <p class="text-muted">Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
                         </div>
                     </div>
                 </div>
@@ -218,187 +216,611 @@
     <section id="mobiles-products" class="product-store position-relative padding-large no-padding-top pb-5">
         <div class="container">
             <div class="row">
-                <div class="d-flex justify-content-between  pb-3">
-                    <h2 class="text-uppercase text-dark">
+                <div class="d-flex justify-content-between pb-3">
+                    <h2 class="text-uppercase text-dark fw-normal">
                         Mobile Products
                     </h2>
                     <div class="btn-right">
-                        <a class="text-uppercase text-dark" href="">Go To Shop</a>
+                        <a class="text-uppercase text-dark" href="">
+                            <h6>Go To Shop</h6>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="product-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="mobile-item position-relative overflow-hidden">
-                            <img src="assets/images/mobiles/product-item1.jpg" class="mobile-img" alt="" width="100%">
-                            <div
-                                class="position-absolute h-full w-full bg-secondary/20 d-flex justify-content-center align-items-center">
-
-                            </div>
-                            <div class="d-flex justify-content-between align-item-base pt-3">
-                                <h5 class="text-uppercase">Iphone 10</h5>
-                                <h5>$980</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="mobile-item">
-                            <img src="assets/images/mobiles/product-item2.jpg" class="mobile-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-item-base pt-3">
-                                <h5 class="text-uppercase">Iphone 11</h5>
-                                <h5>$1100</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="mobile-item">
-                            <img src="assets/images/mobiles/product-item3.jpg" class="mobile-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-item-base pt-3">
-                                <h5 class="text-uppercase">Iphone 8</h5>
-                                <h5>$780</h5>
+            <div class="container">
+                <!-- Start mobile item -->
+                <div class="product-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/mobiles/product-item1.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="mobile-item">
-                            <img src="assets/images/mobiles/product-item4.jpg" class="mobile-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-item-base pt-3">
-                                <h5 class="text-uppercase">Iphone 13</h5>
-                                <h5>$1080</h5>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/mobiles/product-item2.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 11</h5>
+                                            <h5 class="price">$1100</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="mobile-item">
-                            <img src="assets/images/mobiles/product-item5.jpg" class="mobile-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-item-base pt-3">
-                                <h5 class="text-uppercase">Iphone 12</h5>
-                                <h5>$1000</h5>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/mobiles/product-item3.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 8</h5>
+                                            <h5 class="price">$780</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/mobiles/product-item4.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 12</h5>
+                                            <h5 class="price">$1300</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/mobiles/product-item5.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 13</h5>
+                                            <h5 class="price">$1400</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End mobile item -->
                     </div>
-                    <!-- End mobile item -->
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
     <!-- End Mobiles Products -->
 
     <!-- Watches Prodcut -->
-    <section id="watches-products" class="product-store position-relative pb-5">
+    <section id="watches-products" class="product-store position-relative padding-large no-padding-top pb-5">
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-between pb-3">
-                    <h2 class="text-uppercase text-dark">
-                        Watches Products
+                    <h2 class="text-uppercase text-dark fw-normal">
+                        Smart Watches
                     </h2>
                     <div class="btn-right">
-                        <a class="text-uppercase text-dark" href="">Go To Shop</a>
+                        <a class="text-uppercase text-dark" href="">
+                            <h6>Go To Shop</h6>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="product-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="watch-item">
-                            <img src="assets/images/watches/product-item6.jpg" class="watch-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-items-base pt-3">
-                                <h5 class="text-uppercase">Pink Watche</h5>
-                                <h5>$870</h5>
+            <div class="container">
+                <!-- Start watch item -->
+                <div class="product-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="watch-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/watches/product-item6.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="mwatch-item">
-                            <img src="assets/images/watches/product-item7.jpg" class="watch-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-items-base pt-3">
-                                <h5 class="text-uppercase">Heavy Watch</h5>
-                                <h5>$680</h5>
+                        <!-- End watch item -->
+                        <!-- Start watch item -->
+                        <div class="swiper-slide">
+                            <div class="watch-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/watches/product-item7.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 11</h5>
+                                            <h5 class="price">$1100</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="watch-item">
-                            <img src="assets/images/watches/product-item8.jpg" class="watch-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-items-base pt-3">
-                                <h5 class="text-uppercase">Sportted Watch</h5>
-                                <h5>$780</h5>
+                        <!-- End watch item -->
+                        <!-- Start watch item -->
+                        <div class="swiper-slide">
+                            <div class="watch-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/watches/product-item8.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 8</h5>
+                                            <h5 class="price">$780</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="watch-item">
-                            <img src="assets/images/watches/product-item9.jpg" class="watch-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-items-base pt-3">
-                                <h5 class="text-uppercase">Black Watch</h5>
-                                <h5>$1080</h5>
+                        <!-- End watch item -->
+                        <!-- Start watch item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/watches/product-item9.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 12</h5>
+                                            <h5 class="price">$1300</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End mobile item -->
-                    <div class="swiper-slide">
-                        <div class="watch-item">
-                            <img src="assets/images/watches/product-item10.jpg" class="watch-img" alt="" width="100%">
-                            <div class="d-flex justify-content-between align-items-base pt-3">
-                                <h5 class="text-uppercase">Iphone 12</h5>
-                                <h5>$1000</h5>
+                        <!-- End watch item -->
+                        <!-- Start watch item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="assets/images/watches/product-item10.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-center">
+                                            <h5 class="text-uppercase">Iphone 13</h5>
+                                            <h5 class="price">$1400</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- End mobile item -->
                     </div>
-                    <!-- End mobile item -->
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
     <!-- End Watches Prodcut -->
+
     <!-- On Sales -->
-    <section id="sale" class="overflow-hidden bg-secondary padding-xlarge background-image" style="height: 78vh;">
+    <section id="sale" class=" sale overflow-hidden bg-secondary padding-xlarge">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-6 col-sm-12 pt-5">
+                <div class="col-md-6 col-sm-12 pt-3">
                     <div class="text-content offset-4 padding-medium text-light">
                         <h3>10% off</h3>
-                        <h2 class="display-2 pb-5 text-uppercase text-light">New year sale</h2>
-                        <a href="shop.html" class="btn btn-lg btn-dark text-uppercase btn-rounded-none text-light">
+                        <h2 class="display-2 text-uppercase text-light">New year sale</h2>
+                        <a href="shop.html" class="btn btn-lg text-uppercase text-light btn-rounded-none bg-dark">
                             Shop Sale
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 pt-5">
-                    <img src="assets/images/iphone.png" alt="" width="80%">
+                <div class="col-md-6 col-sm-12 pt-3">
+                    <img src="assets/images/iphone.png" alt="" width="100%">
                 </div>
             </div>
         </div>
     </section>
     <!-- End On Sales -->
+
     <!-- Latest Post -->
-    <section id="latest-post" class="product-store position-relative pt-5">
+    <section id="latest-post" class="latest-post position-relative">
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-between pb-3">
-                    <h2 class="text-uppercase text-dark">
+                    <h2 class="text-uppercase text-dark fw-normal">
                         Latest Posts
                     </h2>
                     <div class="btn-right">
-                        <a class="text-uppercase text-dark" href="">Read Blog</a>
+                        <a class="text-uppercase text-dark" href="">
+                            <h6>Read Blog</h6>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <!-- Start mobile item -->
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="blog">
+                        <div class="post-item position-relative overflow-hidden">
+                            <img src="assets/images/blogs/post-item1.jpg" class="mobile-img" alt="" width="100%">
+                            <div class="post-text">
+                                <div class="meta-text mt-3 text-uppercase">
+                                    Feb 22, 2023 - Gadgets
+                                </div>
+                                <a class="text-uppercase" href="">Get Some Cool Gadgets In 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End mobile item -->
+                <!-- Start mobile item -->
+                <div class="col-md-4  mb-3">
+                    <div class="blog">
+                        <div class="post-item position-relative overflow-hidden">
+                            <img src="assets/images/blogs/post-item2.jpg" class="mobile-img" alt="" width="100%">
+                            <div class="post-text">
+                                <div class="meta-text mt-3 text-uppercase">
+                                    FEB 22, 2023 - GADGETS
+                                </div>
+                                <a class="text-uppercase" href="">Get Some Cool Gadgets In 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End mobile item -->
+                <!-- Start mobile item -->
+                <div class="col-md-4 mb-3">
+                    <div class="blog">
+                        <div class="post-item position-relative overflow-hidden">
+                            <img src="assets/images/blogs/post-item3.jpg" class="mobile-img" alt="" width="100%">
+                            <div class="post-text">
+                                <div class="meta-text mt-3 text-uppercase">
+                                    FEB 22, 2023 - GADGETS
+                                </div>
+                                <a class="text-uppercase" href="">Get Some Cool Gadgets In 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End mobile item -->
+            </div>
     </section>
     <!-- Latest Post -->
 
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials position-relative">
+        <div class="container">
+            <div class="quote d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="container">
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="quote-text d-flex justify-content-center align-items-center">
+                                <div class="card text-center" style="width: 80%;">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">
+                                            “Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis
+                                            lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise
+                                            sagittis lorem habi tasse morbi.”
+                                        </p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="author-name text-uppercase">Emma Chamberlin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="quote-text d-flex justify-content-center align-items-center">
+                                <div class="card text-center" style="width: 80%;">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">
+                                            “A blog is a digital publication that can complement a website or exist
+                                            independently. A blog may include articles, short posts, listicles,
+                                            infographics, videos, and other digital content.”
+                                        </p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p class="author-name text-uppercase">Jennie Rose</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next text-secondary"></div>
+                    <div class="swiper-button-prev text-secondary"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
 
+    <!-- Subscribe -->
+    <section id="subscribe" class="subscribe position-relative">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6 mx-3">
+                    <h2 class="text-light text-uppercase mx-5 fw-normal">Subscribe Us Now</h2>
+                    <div class="text-secondary mx-5 fw-normal">Get latest news, updates and deals directly mailed to
+                        your inbox.
+                    </div>
+                </div>
+                <div class="col-md-5 pt-3">
+                    <form class="d-flex justify-content-center align-items-center" role="search">
+                        <input class="form-control" type="email" placeholder="Your email address here"
+                            aria-label="Subscribe">
+                        <button class="btn text-light fw-normal" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Subscribe -->
+
+    <!-- Instagram -->
+    <section id="instagram" class="instagram padding-large overflow-hidden no-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="display-header text-uppercase text-dark text-center pb-3">
+                    <h2>Shop Our Insta</h2>
+                </div>
+                <div class="d-flex flex-wrap d-flex justify-content-center align-items-center">
+                    <figure class="instagram-item pe-2 ">
+                        <a href="#" class="image-link position-relative">
+                            <img src="assets/images/insta/insta-item1.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="assets/images/insta/insta-item2.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="assets/images/insta/insta-item3.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="assets/images/insta/insta-item4.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2 d-flex justify-content-center align-items-center">
+                        <a href="#" class="image-link position-relative">
+                            <img src="assets/images/insta/insta-item5.jpg" alt="instagram" class="insta-image">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Instagram -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-light text-muted">
+        <!-- Section: Links  -->
+        <section class="links">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="sight-map col-md-3 col-lg-4 col-xl-3 mx-auto mb-5">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-1">
+                            <img src="assets/images/main-logo.png" alt="">
+                        </h6>
+                        <p>
+                            Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat
+                            aenean odio erat nullam fringilla
+                        </p>
+                        <div class="social-media text-muted">
+                            <a href="" class="me-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="me-4">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-dark mb-3 fw-normal">
+                            Quick links
+                        </h5>
+                        <p class="text-uppercase mb-2 fw-normal">
+                            <a href="#!">Home</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">About</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Shop</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Blog</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-dark mb-3 fw-normal">
+                            Help & Info Help
+                        </h5>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Track Your Order</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Returns Policies</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Shipping + Delivery</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Contact Us</a>
+                        </p>
+                        <p class="text-uppercase text-dark mb-2 fw-normal">
+                            <a href="#!">Faqs</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="contact col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-dark mb-4 fw-normal">Contact</h5>
+                        <p>Do you have any queries or suggestions?
+                            <a href="">yourinfo@gmail.com</a>
+                        </p>
+                        <p>
+                            If you need support? Just give us a call.
+                            <a href="">+55 111 222 333 44</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -406,6 +828,7 @@
     <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script>
         let swiperCards = new Swiper(".product-slider", {
@@ -419,18 +842,28 @@
                 400: {
                     slidesPerView: 2,
                 },
-                500: {
-                    slidesPerView: 2,
-                },
                 600: {
                     slidesPerView: 2,
                 },
                 968: {
-                    slidesPerView: 3,
-                },
-                1400: {
                     slidesPerView: 4,
-                }
+
+                },
+            },
+        });
+        let swiperCards2 = new Swiper(".testimonials-slider", {
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+
+            },
+            breakpoints: {
+                968: {
+                    slidesPerView: 1,
+
+                },
             },
         });
     </script>
