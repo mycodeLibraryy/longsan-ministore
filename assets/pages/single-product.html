@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Product</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
@@ -99,6 +99,411 @@
     </section>
     <!-- Navbar -->
 
+    <section class="singel-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <img src="../images/watches/product-item6.jpg" alt="" class="img-fluid" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="col-lg-6">
+                        <div class="product-info">
+                            <div class="element-header">
+                                <h3 itemprop="name" class="display-7 text-uppercase">Pink Watch</h3>
+                                <div class="rating-container d-flex align-items-center">
+                                    <div class="rating" data-rating="1" onclick="rate(1)">
+                                        <i class="fa fa-star"></i>
+                                        <span class="rating-count ps-2">5.2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-price pt-3 pb-3">
+                                <strong class="display-6 fw-bold">$870.00</strong>
+                            </div>
+                            <p>Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum
+                                adipiscing platea blandit sit sed quam semper rhoncus. Diam ultrices maecenas consequat
+                                eu tortor orci, cras lectus mauris, cras egestas quam venenatis neque.</p>
+                            <div class="cart-wrap padding-small">
+                                <div class="color-options product-select">
+                                    <div class="color-toggle" data-option-index="0">
+                                        <h4 class="item-title text-uppercase text-dark text-decoration-underline">Color:
+                                        </h4>
+                                        <ul class="select-list list-unstyled d-flex">
+                                            <li class="select-item pe-3" data-val="Green" title="Green">
+                                                <a href="#">Green</a>
+                                            </li>
+                                            <li class="select-item pe-3" data-val="Orange" title="Orange">
+                                                <a href="#">Orange</a>
+                                            </li>
+                                            <li class="select-item pe-3" data-val="Red" title="Red">
+                                                <a href="#">Red</a>
+                                            </li>
+                                            <li class="select-item" data-val="Black" title="Black">
+                                                <a href="#">Black</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swatch product-select pb-2" data-option-index="1">
+                                    <h4 class="item-title text-uppercase text-dark text-decoration-underline">Size:</h4>
+                                    <ul class="select-list list-unstyled d-flex">
+                                        <li data-value="S" class="select-item pe-3">
+                                            <a href="#">S</a>
+                                        </li>
+                                        <li data-value="M" class="select-item pe-3">
+                                            <a href="#">M</a>
+                                        </li>
+                                        <li data-value="L" class="select-item pe-3">
+                                            <a href="#">L</a>
+                                        </li>
+                                        <li data-value="XL" class="select-item">
+                                            <a href="#">XL</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-quantity pb-2">
+                                    <div class="stock-number text-dark pb-2">2 in stock</div>
+                                    <div class="col-md-6 col-lg-6 col-xl-6 d-flex">
+                                        <button class="btn btn-link px-2"
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+
+                                        <input id="form1" min="0" name="quantity" value="2" type="number"
+                                            class="form-control form-control-sm" />
+
+                                        <button class="btn btn-link px-2"
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="btn-buy-addtocart">
+                                    <div class="row">
+                                        <div class="col-md-6 pt-3 pb-3">
+                                            <a href="" class="btn btn-buy btn-lg text-light btn-rounded-none w-100">
+                                                Buy Now
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 pt-3 pb-3">
+                                            <a href="" class="btn btn-add btn-lg text-light btn-rounded-none w-100">
+                                                Add To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meta-product py-4">
+                        <div class="meta-item d-flex align-items-baseline">
+                            <h4 class="item-title no-margin pe-2">SKU:</h4>
+                            <ul class="select-list list-unstyled d-flex">
+                                <li data-value="S" class="select-item">1223</li>
+                            </ul>
+                        </div>
+                        <div class="meta-item d-flex align-items-baseline">
+                            <h4 class="item-title no-margin pe-2">Category:</h4>
+                            <ul class="select-list list-unstyled d-flex">
+                                <li data-value="S" class="select-item">
+                                    <a href="#">Watch</a>,
+                                </li>
+                                <li data-value="S" class="select-item">
+                                    <a href="#"> Screen touch</a>,
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="meta-item d-flex align-items-baseline">
+                            <h4 class="item-title no-margin pe-2">Tags:</h4>
+                            <ul class="select-list list-unstyled d-flex">
+                                <li data-value="S" class="select-item">
+                                    <a href="#">Classic</a>,
+                                </li>
+                                <li data-value="S" class="select-item">
+                                    <a href="#"> Modern</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="product-info-tabs">
+                <div class="container">
+                    <div class="row">
+                        <div class="tabs-listing">
+                            <nav>
+                                <div class="nav nav-tabs d-flex flex-wrap justify-content-center" id="nav-tab"
+                                    role="tablist">
+                                    <button class="nav-link text-uppercase pe-5 active" id="nav-home-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                                        aria-controls="nav-home" aria-selected="true">Description</button>
+                                    <button class="nav-link text-uppercase pe-5" id="nav-information-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-information" type="button" role="tab"
+                                        aria-controls="nav-information" aria-selected="false">Additional
+                                        information</button>
+                                    <button class="nav-link text-uppercase pe-5" id="nav-review-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-review" type="button" role="tab"
+                                        aria-controls="nav-review" aria-selected="false">Reviews</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade border-top border-bottom padding-small active show"
+                                    id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <p>Product Description</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                        volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra
+                                        non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                        fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                                        felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
+                                        ligula vulputate sem tristique cursus.</p>
+                                    <ul style="list-style-type:disc;" class="list-unstyled ps-4">
+                                        <li>Donec nec justo eget felis facilisis fermentum.</li>
+                                        <li>Suspendisse urna viverra non, semper suscipit pede.</li>
+                                        <li>Aliquam porttitor mauris sit amet orci.</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                        volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra
+                                        non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                        fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                                        felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
+                                        ligula vulputate sem tristique cursus. </p>
+                                </div>
+                                <div class="tab-pane fade border-top border-bottom padding-small" id="nav-information"
+                                    role="tabpanel" aria-labelledby="nav-information-tab">
+                                    <p>It is Comfortable and Best</p>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="tab-pane fade border-top border-bottom padding-small" id="nav-review"
+                                    role="tabpanel" aria-labelledby="nav-review-tab">
+                                    <div class="review-box d-flex flex-wrap">
+                                        <div
+                                            class="col-lg-6 d-flex flex-wrap justify-content-center align-items-center">
+                                            <div class="col-md-2">
+                                                <div class="image-holder">
+                                                    <img src="../images/insta/insta-item5.jpg" alt="review"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="review-content">
+                                                    <div class="rating-container d-flex align-items-center">
+                                                        <div class="rating" data-rating="1" onclick="rate(1)">
+                                                            <i class="icon icon-star"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="2" onclick="rate(1)">
+                                                            <i class="icon icon-star"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="3" onclick="rate(1)">
+                                                            <i class="icon icon-star"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="4" onclick="rate(1)">
+                                                            <i class="icon icon-star-half"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="5" onclick="rate(1)">
+                                                            <i class="icon icon-star-empty"></i>
+                                                        </div>
+                                                        <span class="rating-count">(3.5)</span>
+                                                    </div>
+                                                    <div class="review-header">
+                                                        <span class="author-name">Tina Johnson</span>
+                                                        <span class="review-date">- 03/07/2023</span>
+                                                    </div>
+                                                    <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at
+                                                        lectus urna duis convallis convallis</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 d-flex flex-wrap justify-content-center align-items-center">
+                                            <div class="col-md-2">
+                                                <div class="image-holder">
+                                                    <img src="../images/insta/insta-item4.jpg" alt="review"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="review-content">
+                                                    <div class="rating-container d-flex align-items-center">
+                                                        <div class="rating" data-rating="1" onclick="rate(1)">
+                                                            <i class="icon icon-star"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="2" onclick="rate(1)">
+                                                            <i class="icon icon-star"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="3" onclick="rate(1)">
+                                                            <i class="icon icon-star"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="4" onclick="rate(1)">
+                                                            <i class="icon icon-star-half"></i>
+                                                        </div>
+                                                        <div class="rating" data-rating="5" onclick="rate(1)">
+                                                            <i class="icon icon-star-empty"></i>
+                                                        </div>
+                                                        <span class="rating-count">(3.5)</span>
+                                                    </div>
+                                                    <div class="review-header">
+                                                        <span class="author-name">Jenny Willis</span>
+                                                        <span class="review-date">- 03/06/2022</span>
+                                                    </div>
+                                                    <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at
+                                                        lectus urna duis convallis convallis</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <section id="realated-products" class="product-store position-relative padding-large no-padding-top pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-between pb-3">
+                    <h2 class="text-uppercase text-dark">
+                        Related Products
+                    </h2>
+                    <div class="btn-right">
+                        <a class="text-uppercase text-dark" href="">
+                            <h6>Go To Shop</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Start mobile item -->
+                <div class="product-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="../images/mobiles/product-item2.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 10</h5>
+                                            <h5 class="price">$980</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="watche-item">
+                                <div class="position-relative">
+                                    <img src="../images/watches/product-item7.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 11</h5>
+                                            <h5 class="price">$1100</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="../images/mobiles/product-item5.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 8</h5>
+                                            <h5 class="price">$780</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="../images/watches/product-item6.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 12</h5>
+                                            <h5 class="price">$1300</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End mobile item -->
+                        <!-- Start mobile item -->
+                        <div class="swiper-slide">
+                            <div class="mobile-item">
+                                <div class="position-relative">
+                                    <img src="../images/watches/product-item9.jpg" class="mobile-img" alt=""
+                                        width="100%">
+                                    <a class="text-light" href="">
+                                        <button type="button" class="btn btn-dark">
+                                            <h6>Add To Cart <i class="fa fa-shopping-cart"></i></h6>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="container pt-3">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex justify-content-between">
+                                            <h5 class="text-uppercase">Iphone 13</h5>
+                                            <h5 class="price">$1400</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End mobile item -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Start Subscribe -->
     <section id="subscribe" class="subscribe position-relative">
@@ -286,6 +691,29 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script>
+        let swiperCards = new Swiper(".product-slider", {
+            spaceBetween: 30,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                400: {
+                    slidesPerView: 2,
+                },
+                600: {
+                    slidesPerView: 2,
+                },
+                968: {
+                    slidesPerView: 4,
+
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

@@ -120,7 +120,7 @@ body {
   padding: 56px 12px;
 }
 .subscribe {
-  padding: 98px 0px;
+  padding: 56px 0px;
 }
 .subscribe input {
   font-size: 18px;
@@ -191,9 +191,7 @@ footer a i:hover {
 .breadcrumb .breadcrumb-item a:hover {
   color: #72aec8;
 }
-.about-us .about-us-detail p {
-  color: #aeaeae;
-}
+/*----------------- About Us -----------------*/
 .about-us {
   padding: 0px 0px 98px;
 }
@@ -361,7 +359,7 @@ footer a i:hover {
 .billing-detail .place-on-order a:hover {
   background-color: #72aec8;
 }
-/* Single Post */
+/*----------------- Single Post -----------------*/
 .single-post {
   padding: 98px 0px;
 }
@@ -403,4 +401,80 @@ footer a i:hover {
 }
 .single-post .comment .btn-comment .btn{
   background-color: black;
+}
+/*----------------- Singel Product -----------------*/
+.singel-product{
+  padding-top: 168px;
+}
+.singel-product .product-price{
+  color: #72aec8;
+}
+.singel-product .color-options a{
+  color: black;
+}
+.singel-product .color-options a:hover{
+  color: #72aec8;
+}
+.singel-product .swatch ul li a{
+  color: black;
+}
+.singel-product .swatch ul li a:hover{
+  color: #72aec8;
+}
+.singel-product .btn-buy-addtocart .btn-buy{
+  background-color: #72aec8;
+}
+.singel-product .btn-buy-addtocart .btn-buy:hover{
+  background-color: black;
+}
+.singel-product .btn-buy-addtocart .btn-add{
+  background-color: black;
+}
+.singel-product .btn-buy-addtocart .btn-add:hover{
+  background-color: #72aec8;
+}
+.singel-product h4{
+  font-size: 16px;
+}
+.singel-product .meta-product a{
+  color: black;
+}
+.singel-product .meta-product a:hover{
+  color: #72aec8;
+}
+.product-info-tabs {
+  padding: 98px 0px;
+}
+.product-info-tabs .image-holder{
+  width: 70px;
+  height: 70px;
+}
+.product-info-tabs .tabs-listing button{
+  font-size: 26px;
+}
+.product-info-tabs .tabs-listing .nav .active{
+  color: #72aec8;
+  background-color: white;
+}
+/*----------------- Contact -----------------*/
+.contact-us{
+  padding: 78px 0px;
+}
+.contact-us .btn-submit .btn{
+  background-color: black;
+}
+.contact-us .contact-info a{
+  color: black;
+}
+.contact-us .contact-info a:hover{
+  color: #72aec8;
+}
+.our-store{
+  padding-bottom: 56px;
+}
+.our-store .contact-info a{
+  color: black;
+}
+.our-store .contact-info a:hover{
+  color: #72aec8;
 }
