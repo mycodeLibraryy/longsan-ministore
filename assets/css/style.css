@@ -12,6 +12,7 @@ body {
 .navbar a:hover {
   color: #72aec8;
 }
+/*----------------- Silde -----------------*/
 .billboard {
   background-color: #eef1f3;
 }
@@ -443,17 +444,23 @@ body {
   background-color: white;
 }
 /*----------------- Contact -----------------*/
-.contact-us{
+.contact-section{
   padding: 78px 0px;
 }
-.contact-us .btn-submit .btn{
+.contact-section .btn-submit .btn{
   background-color: black;
 }
-.contact-us .contact-info a{
+.contact-section .contact-info .tel a{
   color: black;
 }
-.contact-us .contact-info a:hover{
+.contact-section .contact-info .email a{
+  color: black;
+}
+.contact-section .contact-info .tel a:hover{
   color: #72aec8;
+}
+.contact-section .contact-info .email a:hover{
+  color: black;
 }
 .our-store{
   padding-bottom: 56px;
