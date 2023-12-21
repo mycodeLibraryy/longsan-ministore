@@ -159,20 +159,6 @@ body {
   opacity: 0.8;
 }
 
-/*----------------- Footer -----------------*/
-footer a i {
-  font-size: 20px;
-  color: #d7dddf;
-}
-footer a {
-  color: #232529;
-}
-footer a:hover {
-  color: #72aec8;
-}
-footer a i:hover {
-  color: #72aec8;
-}
 /*----------------- Breadcrumb -----------------*/
 #breadcrumb {
   padding: 56px 0px;
@@ -476,5 +462,19 @@ footer a i:hover {
   color: black;
 }
 .our-store .contact-info a:hover{
+  color: #72aec8;
+}
+/*----------------- Footer -----------------*/
+footer a i {
+  font-size: 20px;
+  color: #d7dddf;
+}
+footer a {
+  color: #232529;
+}
+footer a:hover {
+  color: #72aec8;
+}
+footer a i:hover {
   color: #72aec8;
 }
